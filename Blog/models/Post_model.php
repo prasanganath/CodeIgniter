@@ -56,5 +56,13 @@
             $this->db->where('id', $this->input->post('id'));
 			return $this->db->update('posts', $data);
 
+
+		}	
+
+		public function get_catagories(){
+			$this->db->order_by('name');
+			$query = $this->db->get('catagories');
+			return $query->result_array();
+
 		}
 	}
