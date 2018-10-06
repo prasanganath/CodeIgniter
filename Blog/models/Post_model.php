@@ -10,7 +10,7 @@
 		}
 		public function get_posts($slug = FALSE){
 			if ($slug === FALSE){
-				 $query = $this->db->get('posts');
+				 $query = $this->db->get('posts'); 
 				 return $query->result_array();
 				
 			}
@@ -28,7 +28,7 @@
 
 
 			);
-			return $this->db->insert('post', $data);
+			return $this->db->insert('posts', $data);
 			
 
 		}
