@@ -10,6 +10,7 @@
 		}
 		public function get_posts($slug = FALSE){
 			if ($slug === FALSE){
+				 $this->db->order_by('id', 'DESC');
 				 $query = $this->db->get('posts'); 
 				 return $query->result_array();
 				
@@ -30,6 +31,14 @@
 			);
 			return $this->db->insert('posts', $data);
 			
+
+		}
+
+		public function delete_post($id){
+			$this->db->where('id', $id);
+			$this->db->delete('posts');
+			return true;
+
 
 		}
 	}
