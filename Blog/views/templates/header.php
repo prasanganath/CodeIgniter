@@ -16,7 +16,7 @@
 		</div>
 		<div id="navbar">
 		 <ul class="nav navbar-nav">
-			<a href="<?php echo base_url() ?>home">Home</a>
+			<a href="<?php echo base_url() ?>">Home</a>
 			<a href="<?php echo base_url() ?>about">About</a>
 			<a href="<?php echo base_url() ?>posts">Blog</a>
 		 </ul>
