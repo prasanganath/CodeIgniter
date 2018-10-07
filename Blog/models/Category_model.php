@@ -20,8 +20,13 @@
 
 
 			);
-			return $this->db->insert('categories', $data);
+			return $this->db->insert('catagories', $data);
 
 			# code...
+		}
+
+		public function get_category($id){
+			$query = $this->db->get_where('catagories', array('id'=> $id));
+			return $query->row();
 		}
 	}
