@@ -28,6 +28,7 @@
 				'slug' => $slug,
 				'body' => $this->input->post('body'),
 				'catagory_id' => $this->input->post('catagory_id'),
+				'user_id' => $this->session->userdata('user_id'),
 				'post_image' => $post_image 
 
 
