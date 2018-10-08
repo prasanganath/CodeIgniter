@@ -17,6 +17,11 @@
 		}
 		
 		public function create(){
+			//check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
+			
 			$data['title'] = 'Create Category';
 
 			$this->form_validation->set_rules('name', 'Name', 'required');
@@ -30,6 +35,8 @@
 				# code...
 			} else{
 				$this->category_model->create_category();
+				$this->session->set_flashdata('category_created', 'Your category hass been created');
+
 				redirect('categories');
 
 			}

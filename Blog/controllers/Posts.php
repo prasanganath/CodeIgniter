@@ -20,6 +20,10 @@
 
 		public function view($slug = NULL){
 			$data['post'] = $this->post_model->get_posts($slug);
+			$post_id = $data['post']['id'];
+			$data['comments'] = $this->comment_model->get_comments($post_id);
+
+
 			if (empty($data['post'])){
 				show_404();
 
@@ -34,6 +38,11 @@
 		}
 
 		public function create(){
+			//check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
+
 			$data['title'] = 'Create Post';
 
 			$data['catagories'] = $this->post_model->get_catagories();
@@ -50,8 +59,8 @@
 				$config['upload_path'] = './assets/images/posts';
 				$config['allowed_types'] = 'gif|jpg|png';
 				$config['max_size'] = '2048';
-				$config['max_width'] = '500';
-				$config['max_height'] = '500';
+				$config['max_width'] = '2000';
+				$config['max_height'] = '2000';
 
 				$this->load->library('upload',$config);
 
@@ -65,6 +74,10 @@
 
 				}
 				$this->post_model->create_post($post_image);
+				//set message
+
+				$this->session->set_flashdata('post_created', 'Your post has been created');
+
 				redirect('posts');
 
 			} 
@@ -74,12 +87,29 @@
 		}
 
 		public function delete($id){
+			//check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
+			
 			$this->post_model->delete_post($id);
+			$this->session->set_flashdata('post_deleted', 'Your post has been deleted');
+
 			redirect('posts');
 		}
 
 		public function edit($slug){
+			//check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
+
 			$data['post'] = $this->post_model->get_posts($slug);
+			//check user
+			if($this->session->userdata('user_id') != $this->post_model->get_posts($slug)['user_id']){
+				redirect('posts'); 
+
+			}
 
 			$data['catagories'] = $this->post_model->get_catagories();
 
@@ -99,7 +129,15 @@
 		}
 
 		public function update(){
+			//check login
+			if(!$this->session->userdata('logged_in')){
+				redirect('users/login');
+			}
+
 			$this->post_model->update_post();
+
+			$this->session->set_flashdata('post_updated', 'Your post has been updated');
+
 			redirect('posts');
 
 		}   
