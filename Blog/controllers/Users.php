@@ -61,7 +61,7 @@
 				if($user_id){
 					//set message 
 					$user_data = array(
-						'user_id => $user_id',
+						'user_id' => $user_id,
 						'username' => $username,
 						'logged_in' => true
 
