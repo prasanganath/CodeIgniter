@@ -7,6 +7,7 @@
 			$username = $arr['uname'];
 			$password = $arr['password'];
 			$email = $arr['email'];
+			$confirmpassword = $arr['rpassword'];
 			$query = "INSERT INTO signup(uname,password,email) VALUES ('$username','$password','$email')";
 
 			//echo $query;

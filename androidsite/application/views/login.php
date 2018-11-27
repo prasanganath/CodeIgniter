@@ -44,7 +44,8 @@
 			    </form>
 			</div>
 			<div class="sign-up-htm">
-				<form action=<?php echo base_url('index.php/test/getFormData')?> method="post">
+
+				<form action=<?php echo base_url('index.php/test/getFormData')?> method="post" >
 					<div class="group">
 						<label for="user" class="label">Username</label>
 						<input id="user" name="uname" type="text" class="input">
@@ -59,7 +60,7 @@
 					</div>
 					<div class="group">
 						<label for="pass" class="label">Email Address</label>
-						<input id="pass" name="email" type="text" class="input">
+						<input id="emai" name="email" type="text" class="input">
 					</div>
 					<div class="group">
 						<input type="submit" class="button" value="Sign Up">
@@ -69,6 +70,7 @@
 						<label for="tab-1">Already Member?</a>
 					</div>
 				</form>
+				
 			</div>
 		</div>
 	</div>

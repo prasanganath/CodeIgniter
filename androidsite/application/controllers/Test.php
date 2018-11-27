@@ -80,7 +80,8 @@ class Test extends CI_Controller {
 		$data=array(
 			'uname'=>$this->input->post('uname'),
 			'password'=>$this->input->post('password'),
-			'email'=>$this->input->post('email')
+			'email'=>$this->input->post('email'),
+			'rpassword'=>$this->input->post('rpassword')
 		);
 		$this->load->model('singUp');
 		$this->singUp->setSignUpData($data);
@@ -100,7 +101,12 @@ class Test extends CI_Controller {
 		if($result=="true"){
 			return redirect('/');
 		}
-		
+		if($_GET['$password']==$_GET['$confirmpassword']){
+			//succes
+		}
+		else{
+			//nosucess
+		}
 	}
 
 
