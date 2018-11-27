@@ -62,13 +62,13 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/phone">Phones</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/tablet">Tablets</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/wear">Wear</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/tv">TV</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/auto">Auto</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/one">One</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/play">Play</a>
             </nav>
           </div>
           <span class="android-mobile-title mdl-layout-title">
@@ -78,10 +78,8 @@
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">Android History</li>
+            <a class="mdl-navigation__link" href="index.php/Test/login">User</a>
+            
           </ul>
         </div>
       </div>
@@ -91,22 +89,22 @@
           <img class="android-logo-image" src="accest/images/android-logo-white.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+          <a class="mdl-navigation__link" href="index.php/Test/phone">Phones</a>
+          <a class="mdl-navigation__link" href="index.php/Test/tablet">Tablets</a>
+          <a class="mdl-navigation__link" href="index.php/Test/wear">Wear</a>
+          <a class="mdl-navigation__link" href="index.php/Test/wear">TV</a>
+          <a class="mdl-navigation__link" href="index.php/Test/auto">Auto</a>
+          <a class="mdl-navigation__link" href="index.php/Test/one">One</a>
+          <a class="mdl-navigation__link" href="index.php/Test/play">Play</a>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">Android history</a>
+          <a class="mdl-navigation__link" href="index.php/Test/lolipop">Lollipop 5.0</a>
+          <a class="mdl-navigation__link" href="index.php/Test/kitkat">KitKat 4.4</a>
+          <a class="mdl-navigation__link" href="index.php/Test/kitkat">Jelly Bean 4.3</a>
+          <a class="mdl-navigation__link" href="index.php/Test/version">Android history</a>
           <div class="android-drawer-separator"></div>
           <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
+          <a class="mdl-navigation__link" href="index.php/Test/resourses">Official blog</a>
           <a class="mdl-navigation__link" href="">Android on Google+</a>
           <a class="mdl-navigation__link" href="">Android on Twitter</a>
           <div class="android-drawer-separator"></div>
@@ -123,7 +121,7 @@
           <div class="logo-font android-slogan">be together. not the same.</div>
           <div class="logo-font android-sub-slogan">welcome to android... be yourself. do your thing. see what's going on.</div>
           <div class="logo-font android-create-character">
-            <a href=""><img src="images/andy.png"> create your android character</a>
+            <a href=""><img src="accest/images/andy.png"> create your android character</a>
           </div>
 
           <a href="#screens">
@@ -137,35 +135,35 @@
           <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
           <div class="android-screens">
             <div class="android-wear android-screen">
-              <a class="android-image-link" href="">
+              <a class="android-image-link" href="index.php/Test/version">
                 <img class="android-screen-image" src="accest/images/wear-silver-on.png">
                 <img class="android-screen-image" src="accest/images/wear-black-on.png">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android Wear</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="index.php/Test/version">Android Wear</a>
             </div>
             <div class="android-phone android-screen">
-              <a class="android-image-link" href="">
+              <a class="android-image-link" href="index.php/Test/phone">
                 <img class="android-screen-image" src="accest/images/nexus6-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="index.php/Test/phone">Phones</a>
             </div>
             <div class="android-tablet android-screen">
-              <a class="android-image-link" href="">
+              <a class="android-image-link" href="index.php/Test/tablet">
                 <img class="android-screen-image" src="accest/images/nexus9-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="index.php/Test/tablet">Tablets</a>
             </div>
             <div class="android-tv android-screen">
-              <a class="android-image-link" href="">
+              <a class="android-image-link" href="index.php/Test/wear">
                 <img class="android-screen-image" src="accest/images/tv-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Android TV</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase" href="index.php/Test/wear">Android TV</a>
             </div>
             <div class="android-auto android-screen">
-              <a class="android-image-link" href="">
+              <a class="android-image-link" href="index.php/Test/androidauto">
                 <img class="android-screen-image" src="accest/images/auto-on.jpg">
               </a>
-              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: Android Auto</a>
+              <a class="android-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="index.php/Test/androidauto">Coming Soon: Android Auto</a>
             </div>
           </div>
         </div>
@@ -301,10 +299,10 @@
               <i class="material-icons">arrow_drop_up</i>
             </a>
             <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/phone">Phones</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="index.php/Test/phone">Phones</a>
               <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
+              <li class="mdl-menu__item">Android History</li>4.4 KitKat
             </ul>
             <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
               For Developers
@@ -324,6 +322,6 @@
       </div>
     </div>
     <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/android-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
-    <script src="https://code.getmdl.io/3/material.min.js"></script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </body>
 </html>
